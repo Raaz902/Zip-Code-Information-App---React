@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <h1>Zip Code Information App</h1>
       <ZipCodeForm onZipCodeSubmit={fetchLocationInfo} isClicked={isClicked} />
-      {isLoading ? <h3>Loading.... </h3> :
+      {isLoading ? <h3>Loading... </h3> :
         <LocationInfo location={location} />
       }
     </div>
