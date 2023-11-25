@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const LocationInfo = ({ location }) => { 
+const LocationInfo = ({ location }) => {
   const initialData = {
     placeName: '',
     state: '',
@@ -25,8 +25,8 @@ const LocationInfo = ({ location }) => {
   return (
     <div>
       <h2>Location Information</h2>
-      <p><b>Country:</b> {area.country}</p>
-      <p><b>State:</b> {area.state}</p>
+      <p><b>Country Name:</b> {area.country}</p>
+      <p><b>State Name:</b> {area.state}</p>
       <p><b>Place Name:</b> {area.placeName}</p>
       <button onClick={clearData}>Clear</button>
     </div>
